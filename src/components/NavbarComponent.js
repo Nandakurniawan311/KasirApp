@@ -4,9 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavbarComponent = () => {
      return (
-          <Navbar expand="lg" className="bg-body-tertiary">
+          <Navbar expand="lg" variant="dark">
                <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                         <strong>Kasir App</strong>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                          <Nav className="me-auto">
