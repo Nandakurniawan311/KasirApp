@@ -1,74 +1,199 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Aplikasi Kasir Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi kasir berbasis web yang dibangun menggunakan React.js dan JSON Server. Aplikasi ini memungkinkan pengguna untuk mengelola transaksi kasir dengan antarmuka yang intuitif dan responsif.
 
-## Available Scripts
+## Struktur Proyek
 
-In the project directory, you can run:
+```
+├── public/
+│   ├── images/
+│   │   └── products/     # Folder untuk gambar produk
+│   └── index.html
+├── src/
+│   ├── components/       # Komponen React
+│   ├── pages/           # Halaman aplikasi
+│   ├── utils/           # Utilitas dan fungsi helper
+│   ├── App.js
+│   └── index.js
+├── db.json              # Database JSON Server
+├── package.json
+└── README.md
+```
 
-### `npm start`
+## Persyaratan Sistem
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (versi 14.0.0 atau lebih baru)
+- npm (versi 6.0.0 atau lebih baru)
+- Web browser modern (Chrome, Firefox, Safari, Edge)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Cara Menjalankan Aplikasi
 
-### `npm test`
+Aplikasi ini membutuhkan dua terminal terpisah untuk menjalankan server database dan aplikasi React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Terminal 1: Menjalankan JSON Server
 
-### `npm run build`
+1. Buka terminal pertama
+2. Pastikan Anda berada di direktori proyek
+3. Jalankan perintah berikut:
+   ```bash
+   npx json-server --watch db.json --port 3001
+   ```
+4. Tunggu hingga muncul pesan:
+   ```
+   \{^_^}/ hi!
+   
+   Loading db.json
+   Done
+   
+   Resources
+   http://localhost:3001/categories
+   http://localhost:3001/products
+   http://localhost:3001/cart
+   
+   Home
+   http://localhost:3001
+   ```
+5. Biarkan terminal ini tetap terbuka
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Terminal 2: Menjalankan Aplikasi React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Buka terminal kedua
+2. Pastikan Anda berada di direktori proyek
+3. Install dependencies (jika belum):
+   ```bash
+   npm install
+   ```
+4. Jalankan aplikasi React:
+   ```bash
+   npm start
+   ```
+5. Aplikasi akan otomatis terbuka di browser di `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Struktur Database (db.json)
 
-### `npm run eject`
+Database menggunakan format JSON dengan struktur berikut:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Categories (Kategori)
+```json
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Makanan",
+      "icon": "fas fa-utensils"
+    },
+    {
+      "id": "2",
+      "name": "Minuman",
+      "icon": "fas fa-coffee"
+    },
+    {
+      "id": "3",
+      "name": "Cemilan",
+      "icon": "fas fa-cookie-bite"
+    }
+  ]
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Products (Produk)
+```json
+{
+  "products": [
+    {
+      "id": "1",
+      "kode": "MKN001",
+      "nama": "Nasi Goreng",
+      "harga": 25000,
+      "gambar": "https://images.pexels.com/photos/...",
+      "kategori": 1
+    }
+  ]
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Cart (Keranjang)
+```json
+{
+  "cart": [
+    {
+      "id": "2766",
+      "productId": "2",
+      "nama": "Mie Ayam",
+      "harga": 20000,
+      "jumlah": 1,
+      "keterangan": ""
+    }
+  ]
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Fitur Aplikasi
 
-## Learn More
+1. **Manajemen Kategori**
+   - Filter produk berdasarkan kategori
+   - Tampilan kategori dengan ikon
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Manajemen Produk**
+   - Tampilan produk dengan gambar
+   - Informasi detail produk (nama, harga, kode)
+   - Penambahan produk ke keranjang
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Keranjang Belanja**
+   - Penambahan/pengurangan jumlah produk
+   - Catatan per produk
+   - Perhitungan total otomatis
+   - Proses checkout
 
-### Code Splitting
+4. **Checkout**
+   - Input nama pelanggan
+   - Ringkasan pesanan
+   - Konfirmasi pembayaran
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Troubleshooting
 
-### Analyzing the Bundle Size
+### Masalah Umum
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Port 3001 Sudah Digunakan**
+   - Pastikan tidak ada aplikasi lain yang menggunakan port 3001
+   - Atau gunakan port lain dengan menambahkan flag `--port`:
+     ```bash
+     npx json-server --watch db.json --port 3002
+     ```
 
-### Making a Progressive Web App
+2. **Gambar Tidak Muncul**
+   - Pastikan koneksi internet aktif
+   - Gambar menggunakan CDN Pexels yang membutuhkan koneksi internet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Aplikasi Tidak Merespons**
+   - Pastikan kedua terminal tetap berjalan
+   - Refresh halaman browser
+   - Periksa console browser untuk error
 
-### Advanced Configuration
+### Tips Pengembangan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Menggunakan Dua Terminal**
+   - Gunakan terminal terpisah untuk JSON Server dan React
+   - Jangan menutup terminal JSON Server saat mengembangkan
+   - Gunakan `Ctrl + C` untuk menghentikan server
 
-### Deployment
+2. **Hot Reload**
+   - Perubahan pada kode React akan otomatis di-refresh
+   - Perubahan pada `db.json` akan otomatis di-refresh oleh JSON Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Debugging**
+   - Gunakan browser developer tools (F12)
+   - Periksa tab Console untuk error
+   - Periksa tab Network untuk request API
 
-### `npm run build` fails to minify
+## Kontribusi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# UAS-PWEB
->>>>>>> ed599144630d85dc1e6c6890ac4e0a4688a664f7
+1. Fork repository
+2. Buat branch fitur (`git checkout -b fitur-baru`)
+3. Commit perubahan (`git commit -m 'Menambahkan fitur baru'`)
+4. Push ke branch (`git push origin fitur-baru`)
+5. Buat Pull Request
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.

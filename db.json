@@ -1,0 +1,127 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Makanan",
+      "icon": "fas fa-utensils"
+    },
+    {
+      "id": "2",
+      "name": "Minuman",
+      "icon": "fas fa-coffee"
+    },
+    {
+      "id": "3",
+      "name": "Cemilan",
+      "icon": "fas fa-cookie-bite"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "kode": "MKN001",
+      "nama": "Nasi Goreng",
+      "harga": 25000,
+      "gambar": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      "kategori": 1
+    },
+    {
+      "id": "2",
+      "kode": "MKN002",
+      "nama": "Mie Ayam",
+      "harga": 20000,
+      "gambar": "https://images.pexels.com/photos/1907227/pexels-photo-1907227.jpeg",
+      "kategori": 1
+    },
+    {
+      "id": "3",
+      "kode": "MKN003",
+      "nama": "Ayam Bakar",
+      "harga": 30000,
+      "gambar": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg",
+      "kategori": 1
+    },
+    {
+      "id": "4",
+      "kode": "MKN004",
+      "nama": "Gado-gado",
+      "harga": 18000,
+      "gambar": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg",
+      "kategori": 1
+    },
+    {
+      "id": "5",
+      "kode": "MNM001",
+      "nama": "Es Teh",
+      "harga": 5000,
+      "gambar": "https://images.pexels.com/photos/1153387/pexels-photo-1153387.jpeg",
+      "kategori": 2
+    },
+    {
+      "id": "6",
+      "kode": "MNM002",
+      "nama": "Kopi Hitam",
+      "harga": 8000,
+      "gambar": "https://images.pexels.com/photos/312080/pexels-photo-312080.jpeg",
+      "kategori": 2
+    },
+    {
+      "id": "7",
+      "kode": "MNM003",
+      "nama": "Jus Jeruk",
+      "harga": 12000,
+      "gambar": "https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg",
+      "kategori": 2
+    },
+    {
+      "id": "8",
+      "kode": "MNM004",
+      "nama": "Cappuccino",
+      "harga": 15000,
+      "gambar": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
+      "kategori": 2
+    },
+    {
+      "id": "9",
+      "kode": "CMN001",
+      "nama": "Keripik Singkong",
+      "harga": 10000,
+      "gambar": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg",
+      "kategori": 3
+    },
+    {
+      "id": "10",
+      "kode": "CMN002",
+      "nama": "Kacang Goreng",
+      "harga": 8000,
+      "gambar": "https://images.pexels.com/photos/4110225/pexels-photo-4110225.jpeg",
+      "kategori": 3
+    },
+    {
+      "id": "11",
+      "kode": "CMN003",
+      "nama": "Pisang Goreng",
+      "harga": 12000,
+      "gambar": "https://images.pexels.com/photos/4110225/pexels-photo-4110225.jpeg",
+      "kategori": 3
+    },
+    {
+      "id": "12",
+      "kode": "CMN004",
+      "nama": "Donat",
+      "harga": 15000,
+      "gambar": "https://images.pexels.com/photos/6940997/pexels-photo-6940997.jpeg",
+      "kategori": 3
+    }
+  ],
+  "cart": [
+    {
+      "id": "2766",
+      "productId": "2",
+      "nama": "Mie Ayam",
+      "harga": 20000,
+      "jumlah": 1,
+      "keterangan": ""
+    }
+  ]
+}
