@@ -22,7 +22,7 @@
       "kode": "MKN001",
       "nama": "Nasi Goreng",
       "harga": 25000,
-      "gambar": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      "gambar": "https://www.masakapahariini.com/wp-content/uploads/2020/02/kumpulan-resep-nasi-goreng.jpg",
       "kategori": 1
     },
     {
@@ -30,7 +30,7 @@
       "kode": "MKN002",
       "nama": "Mie Ayam",
       "harga": 20000,
-      "gambar": "https://images.pexels.com/photos/1907227/pexels-photo-1907227.jpeg",
+      "gambar": "http://doyan-masak.com/wp-content/uploads/2022/02/mie-ayam-sederhana.jpeg",
       "kategori": 1
     },
     {
@@ -46,7 +46,7 @@
       "kode": "MKN004",
       "nama": "Gado-gado",
       "harga": 18000,
-      "gambar": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg",
+      "gambar": "https://culinary.nl/wp-content/uploads/2022/11/gado-gado.jpeg",
       "kategori": 1
     },
     {
@@ -54,7 +54,7 @@
       "kode": "MNM001",
       "nama": "Es Teh",
       "harga": 5000,
-      "gambar": "https://images.pexels.com/photos/1153387/pexels-photo-1153387.jpeg",
+      "gambar": "https://i.pinimg.com/originals/5d/31/ef/5d31ef90cd6c389e07bc48a08e583122.jpg",
       "kategori": 2
     },
     {
@@ -62,7 +62,7 @@
       "kode": "MNM002",
       "nama": "Kopi Hitam",
       "harga": 8000,
-      "gambar": "https://images.pexels.com/photos/312080/pexels-photo-312080.jpeg",
+      "gambar": "https://beritabeta.com/storage/img/2020/05/kopi-hitam-16106.jpg",
       "kategori": 2
     },
     {
@@ -86,7 +86,7 @@
       "kode": "CMN001",
       "nama": "Keripik Singkong",
       "harga": 10000,
-      "gambar": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg",
+      "gambar": "https://www.rumahmesin.com/wp-content/uploads/2019/02/resep-keripik-singkong.jpg",
       "kategori": 3
     },
     {
@@ -94,7 +94,7 @@
       "kode": "CMN002",
       "nama": "Kacang Goreng",
       "harga": 8000,
-      "gambar": "https://images.pexels.com/photos/4110225/pexels-photo-4110225.jpeg",
+      "gambar": "https://asset.kompas.com/crops/GfU2I5QY5hWgZIqlm-N4hcUoSJk=/0x0:1000x667/750x500/data/photo/2020/05/23/5ec88b9e28365.jpg",
       "kategori": 3
     },
     {
@@ -102,7 +102,7 @@
       "kode": "CMN003",
       "nama": "Pisang Goreng",
       "harga": 12000,
-      "gambar": "https://images.pexels.com/photos/4110225/pexels-photo-4110225.jpeg",
+      "gambar": "https://d2ih5qgee2kfcl.cloudfront.net/content/2019/08/21/n0syd1/t_5d5d18b186088_700.jpg",
       "kategori": 3
     },
     {
@@ -110,16 +110,16 @@
       "kode": "CMN004",
       "nama": "Donat",
       "harga": 15000,
-      "gambar": "https://images.pexels.com/photos/6940997/pexels-photo-6940997.jpeg",
+      "gambar": "https://i.pinimg.com/originals/31/99/e0/3199e0453fe4c1c77eafcad31b333cdb.jpg",
       "kategori": 3
     }
   ],
   "cart": [
     {
-      "id": "2766",
-      "productId": "2",
-      "nama": "Mie Ayam",
-      "harga": 20000,
+      "id": "dc5c",
+      "productId": "1",
+      "nama": "Nasi Goreng",
+      "harga": 25000,
       "jumlah": 1,
       "keterangan": ""
     }
